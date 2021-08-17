@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Baking App</string>
+    <string name="error_message">Could not load recipes.</string>
+    <string name="error_no_internet">No internet connection.</string>
+    <string name="ingredients_title">Ingredients:</string>
+    <string name="steps_to_follow">Steps to Follow:</string>
+    <string name="play">Play the cake video.</string>
+    <string name="restart">Restart the cake video.</string>
+    <string name="pause">Pause the cake video.</string>
+    <string name="cake_step_notification_title">Cake video active</string>
+    <string name="active_video">Step video is playing in app.</string>
+    <string name="appwidget_text">example</string>
+    <string name="empty_view_text">Please check out a recipe in app to see the ingredients here.</string>
+    <string name="empty_widget_text">Please visit a recipe page in app to see the ingredients here.</string>
+    <string name="show_ingredients_in_widget">Show ingredients in widget</string>
+</resources>

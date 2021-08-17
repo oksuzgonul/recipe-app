@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.RecipeActivity">
+    <Button
+        android:id="@+id/widget_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_ingredients_in_widget"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/ingredients_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/ingredients_title"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/widget_button"
+        app:layout_constraintTop_toBottomOf="@+id/widget_button"
+        app:layout_constraintEnd_toEndOf="@+id/widget_button"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ingredient_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="@+id/ingredients_title_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/ingredients_title_text_view"
+        app:layout_constraintEnd_toEndOf="@id/ingredients_title_text_view"/>
+
+    <TextView
+        android:id="@+id/steps_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/steps_to_follow"
+        app:layout_constraintStart_toStartOf="@+id/ingredient_recyclerview"
+        app:layout_constraintTop_toBottomOf="@+id/ingredient_recyclerview"
+        app:layout_constraintEnd_toEndOf="@id/ingredient_recyclerview"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/step_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="@+id/steps_title_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/steps_title_text_view"
+        app:layout_constraintEnd_toEndOf="@id/steps_title_text_view"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

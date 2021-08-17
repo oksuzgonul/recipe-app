@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appwidget_text">example</string>
+    <string name="empty_view_text">Please check out a recipe in app to see the ingredients here.</string>
+    <string name="empty_widget_text">Please visit a recipe page in app to see the ingredients here.</string>
+    <string name="show_ingredients_in_widget">Show ingredients in widget</string>
+</resources>
